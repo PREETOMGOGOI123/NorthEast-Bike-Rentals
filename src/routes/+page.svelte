@@ -52,15 +52,15 @@
   </script>
   
   <!-- Navbar -->
-  <div class="navbar bg-base-100 sticky top-0 z-50 shadow-lg">
+  <div class="navbar bg-neutral sticky top-0 z-50 shadow-lg">
     <div class="navbar-start">
       <!-- svelte-ignore a11y_missing_attribute -->
-      <a class="btn btn-ghost normal-case text-xl">🏍️ MotoRent</a>
+      <a class="btn btn-ghost text-neutral-content normal-case text-xl ">🏍️ MotoRent</a>
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1 gap-10">
-        <li><a href="#list-yours" class="btn btn-outline">List Your Bike</a></li>
-        <li><a href="#available" class="btn btn-primary">Rent Now</a></li>
+        <li><a href="#list-yours" class="btn btn-outline text-blue-500">List Your Bike</a></li>
+        <li><a href="#available" class="btn btn-secondary btn-outline text-secondary-content">Rent Now</a></li>
       </ul>
     </div>
     <div class="navbar-end">
@@ -173,7 +173,7 @@
       <div class="max-w-md mx-auto">
         <div class="card bg-base-100 shadow-xl">
           <div class="card-body">
-            <p class="mb-4">📞 Call/WhatsApp: +91 XXXXXXXXXX</p>
+            <p class="mb-4">📞 Call/WhatsApp: +91 8011127009</p>
             <p class="mb-4">📧 Email: contact@motorent.com</p>
             <p>📍 Location: Guwahati, Assam</p>
           </div>
@@ -193,8 +193,5 @@
   </footer>
   
   <style>
-    .navbar {
-      backdrop-filter: blur(10px);
-      background-color: rgba(255, 255, 255, 0.9);
-    }
+
   </style>
