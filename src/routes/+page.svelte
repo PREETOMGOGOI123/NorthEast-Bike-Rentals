@@ -57,7 +57,7 @@
       <!-- svelte-ignore a11y_missing_attribute -->
       <a class="btn btn-ghost normal-case text-xl ">🏍️ MotoRent</a>
     </div>
-    <div class="navbar-center hidden lg:flex">
+    <div class="navbar-center lg:flex">
       <ul class="menu menu-horizontal px-1 gap-10">
         <li><a href="#list-yours" class="btn btn-outline">List Your Bike</a></li>
         <li><a href="#available" class="btn btn-outline">Rent Now</a></li>
@@ -173,7 +173,7 @@
       <div class="max-w-md mx-auto">
         <div class="card bg-base-100 shadow-xl">
           <div class="card-body">
-            <p class="mb-4">📞 Call/WhatsApp: +91 8011127009</p>
+            <p class="mb-4">📞 Call/WhatsApp: +91 XXXXXXXX</p>
             <p class="mb-4">📧 Email: contact@motorent.com</p>
             <p>📍 Location: Guwahati, Assam</p>
           </div>
