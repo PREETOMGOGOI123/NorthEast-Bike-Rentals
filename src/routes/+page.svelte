@@ -6,64 +6,66 @@
     const availableMotorcycles = [
       {
         id: "M001",
-        name: "Royal Enfield Classic 350",
-        image: "https://images.unsplash.com/photo-1725591783170-2cb5566dded3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        price: "1000/day",
-        type: "Cruiser",
+        name: "Royal Enfield Himalayan",
+        image: "https://images.unsplash.com/photo-1609174470568-ac0c96458a67?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        price: "1500/day",
+        type: "Adventure",
         status: "Available",
-        location: "Guwahati",
-        cc: "350cc",
-        features: ["Electric Start", "ABS", "Digital-Analog Console"]
+        location: "XYZ",
+        cc: "411cc",
+        features: ["All-Terrain", "ABS", "Digital Navigation"]
       },
       {
         id: "M002",
-        name: "KTM Duke 390",
-        image: "https://images.unsplash.com/photo-1449426468159-d96dbf08f19f",
-        price: "1500/day",
-        type: "Sport",
+        name: "Hero XPulse 200",
+        image: "https://images.unsplash.com/photo-1648131728440-14d0225c16c3?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        price: "1000/day",
+        type: "Adventure",
         status: "Available",
-        location: "Guwahati",
-        cc: "373cc",
-        features: ["ABS", "Quick Shifter", "TFT Display"]
+        location: "XYZ",
+        cc: "200cc",
+        features: ["Off-Road Ready", "LED Headlamp", "Turn-by-Turn Navigation"]
       },
       {
         id: "M003",
-        name: "Bajaj Pulsar N160",
-        image: "https://images.unsplash.com/photo-1697683051952-fa8fb6283949?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        price: "800/day",
-        type: "Sport Commuter",
-        status: "Available",
-        location: "Guwahati",
-        cc: "160cc",
-        features: ["LED Lights", "ABS", "Digital Console"]
+        name: "City Commutes",
+        image: "https://images.unsplash.com/photo-1724992638710-3e365cafc968?q=80&w=2140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        price: "500/day",
+        type: "City Commuter",
+        status: "Available", 
+        location: "XYZ",
+        cc: "125cc",
+        features: ["Economic", "Comfortable", "Low Maintenance"]
       },
       {
         id: "M004",
-        name: "Honda CB350",
-        image: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc",
-        price: "1200/day",
-        type: "Modern Classic",
+        name: "Scooters",
+        image: "https://images.unsplash.com/photo-1591517487866-e7c7bf9896fb?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        price: "400/day",
+        type: "City Commuter",
         status: "Available",
-        location: "Guwahati",
-        cc: "350cc",
-        features: ["Traction Control", "ABS", "Bluetooth Connectivity"]
+        location: "XYZ",
+        cc: "125cc",
+        features: ["Economic", "Easy to Ride", "Storage Space"]
       }
     ];
   </script>
   
   <!-- Navbar -->
-  <div class="navbar bg-base sticky top-0 z-50 shadow-lg">
+  <div class="navbar bg-base top-0 z-50 mb-10 mt-5 px-10">
     <div class="navbar-start">
       <!-- svelte-ignore a11y_missing_attribute -->
-      <a class="btn btn-ghost normal-case text-xl ">🏍️ MotoRent</a>
+      <a class="btn btn-ghost normal-case text-3xl font-black logo italic " href="/">NE RENTALS</a>
     </div>
     <div class="navbar-center lg:flex">
-      <ul class="menu menu-horizontal px-1 gap-10">
-        <li><a href="#list-yours" class="btn btn-outline">List Your Bike</a></li>
-        <li><a href="#available" class="btn btn-outline">Rent Now</a></li>
-      </ul>
+      <p class="btn btn-outline"> ☎️ +91 8011127009</p>
     </div>
     <div class="navbar-end">
+      <ul class="menu menu-horizontal px-1 gap-10">
+        <li><a href="#list-bikes" class="btn ">List Your Bike</a></li>
+        <li><a href="#available" class="btn">Rent Now</a></li>
+      </ul>
+    
     </div>
   </div>
   
@@ -72,7 +74,7 @@
     <div class="hero-overlay bg-opacity-60"></div>
     <div class="hero-content text-center text-neutral-content">
       <div class="max-w-md">
-        <h1 class="text-5xl font-bold text-white mb-8">Motorcycle Rentals in Guwahati</h1>
+        <h1 class="text-5xl font-bold text-white mb-8">Motorcycle Rentals</h1>
         <p class="py-6 text-white text-lg">Rent your dream motorcycle or share yours with passionate riders.</p>
         <div class="flex gap-4 justify-center">
           <a href="#available" class="btn btn-primary btn-lg">View Available Bikes</a>
@@ -83,7 +85,7 @@
   </div>
   
   <!-- Available Motorcycles Section -->
-  <section id="available" class="py-16 bg-base-100">
+  <section id="available" class="my-32 bg-base-100">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-12">Available Motorcycles</h2>
       
@@ -113,7 +115,7 @@
                 </div>
               </div>
               <div class="card-actions justify-end mt-4">
-                <a href="#available" class="btn btn-primary">Rent Now</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScrUsH_h5nD6IIERLW_fNccs0zTxMm-y2fqeXJGc6Nd1HeaEw/viewform?usp=sharing" target="_blank" class="btn btn-primary">Rent Now</a>
               </div>
             </div>
           </div>
@@ -122,6 +124,22 @@
     </div>
   </section>
   
+  
+  
+  <!-- List Your Motorcycle Section -->
+  <section id="list-bikes" class="py-24 bg-base-100" style="background-image: url('https://images.unsplash.com/photo-1558981285-6f0c94958bb6'); background-size: cover; background-position: center;">
+    <div class="bg-opacity-90 bg-base-100 py-16">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-6">Own a Motorcycle?</h2>
+        <p class="mb-8 text-lg">Turn your motorcycle into an income source. List it on our platform and earn when you're not riding.</p>
+        <div class="space-y-4">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKIbe2jaNimeFkye20axD8ac4UpeJ5wq9BDq6jCmdXc8yoWA/viewform?usp=sharing" target="_blank" class="btn btn-primary btn-lg">List Your Motorcycle</a>
+          <p class="text-sm opacity-75">* All listings are verified and insured</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- How It Works Section -->
   <section id="how-it-works" class="py-16 bg-base-200">
     <div class="container mx-auto px-4">
@@ -152,20 +170,6 @@
     </div>
   </section>
   
-  <!-- List Your Motorcycle Section -->
-  <section id="list-yours" class="py-16 bg-base-100" style="background-image: url('https://images.unsplash.com/photo-1558981285-6f0c94958bb6'); background-size: cover; background-position: center;">
-    <div class="bg-opacity-90 bg-base-100 py-16">
-      <div class="container mx-auto px-4 text-center">
-        <h2 class="text-3xl font-bold mb-6">Own a Motorcycle?</h2>
-        <p class="mb-8 text-lg">Turn your motorcycle into an income source. List it on our platform and earn when you're not riding.</p>
-        <div class="space-y-4">
-          <a href="YOUR_GOOGLE_FORM_LINK_FOR_LISTING" class="btn btn-primary btn-lg">List Your Motorcycle</a>
-          <p class="text-sm opacity-75">* All listings are verified and insured</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
   <!-- Contact Section -->
   <section id="contact" class="py-16 bg-base-200">
     <div class="container mx-auto px-4 text-center">
@@ -173,9 +177,9 @@
       <div class="max-w-md mx-auto">
         <div class="card bg-base-100 shadow-xl">
           <div class="card-body">
-            <p class="mb-4">📞 Call/WhatsApp: +91 XXXXXXXX</p>
-            <p class="mb-4">📧 Email: contact@motorent.com</p>
-            <p>📍 Location: Guwahati, Assam</p>
+            <p class="mb-4">📞 Call/WhatsApp: +91 8011127009</p>
+            <p class="mb-4">📧 Email: rental.northeast@gmail.com</p>
+            <p>📍 Location: Guwahati, Assam, India</p>
           </div>
         </div>
       </div>
@@ -186,12 +190,21 @@
   <footer class="footer footer-center p-10 bg-base-200 text-base-content">
     <div>
       <p class="font-bold">
-        MotoRent <br/>Your Journey, Our Motorcycles
+        NE RENTALS <br/>Your Journey, Our Motorcycles
       </p> 
       <p>© 2024 MotoRent - All rights reserved</p>
     </div> 
   </footer>
   
   <style>
-
+    .logo {
+      background: url(https://images.unsplash.com/photo-1626931609213-d18aa1313402?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: #000;
+      -webkit-text-fill-color: transparent;
+      text-fill-color: transparent;
+      background-size: cover;
+      background-position: center;
+    }
   </style>
